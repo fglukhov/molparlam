@@ -836,6 +836,11 @@ footer .socialBtns a.btn_vk {background:url(../images/ico_vk.png) no-repeat;}
 
 .center .document .ico {width:23px; height:24px; float:left;}
 .center .document .ico.ico_doc {background:url(../images/ico_doc.png) no-repeat;}
+.center .document .ico.ico_ppt {background:url(../images/ico_ppt.png) no-repeat;}
+.center .document .ico.ico_img {background:url(../images/ico_img.png) no-repeat;}
+.center .document .ico.ico_mov {background:url(../images/ico_mov.png) no-repeat;}
+.center .document .ico.ico_xls {background:url(../images/ico_xls.png) no-repeat;}
+.center .document .ico.ico_pdf {background:url(../images/ico_pdf.png) no-repeat;}
 .center .document .txt {overflow:hidden; padding-left:10px;}
 .center .document .txt p {margin-bottom:8px;}
 .center .document .txt p span {color:#808080;}
