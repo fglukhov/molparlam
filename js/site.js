@@ -346,33 +346,35 @@ $(function() {
 		$(this).parent().toggleClass('active');
 	});
 	
-	$('.center .study .teachers .item .Img').click(function(e) {
+	$('.center .study .teachers .item').click(function(e) {
+    var img = $(this).find(".Img");
 		e.preventDefault();
-		$(this).closest('.teachers').find('.Img.active').not($(this)).removeClass('active');
+		$('.teachers').find('.Img.active').not(img).removeClass('active');
 			
-		$(this).closest('.teachers')
+		img.closest('.teachers')
 			.find('.popup').removeAttr('style')
 			.find('.arrow').removeAttr('style');
 		
-		$(this).toggleClass('active');
+		img.toggleClass('active');
 		
-		$block = $(this).closest('dd');
-		$popup = $(this).find('.popup');
+		$block = img.closest('.container');
+		$popup = img.find('.popup');
 		$position1 = $block.offset().left + $block.outerWidth();
 		$position2 = $popup.offset().left + $popup.outerWidth();
 		if($position2 > $position1) {
 			$margin_l_css = Number($popup.css('margin-left').replace('px', ''));
 			$margin_l = $margin_l_css - ($position2 - $position1);
-			$popup.css('margin-left', $margin_l);
+			$popup.css('margin-left', $margin_l - 10);
 			
 			$arrow = $popup.find('.arrow');
 			$arrow_margin_l_css = Number($arrow.css('margin-left').replace('px', ''));
 			$arrow_margin_l = $arrow_margin_l_css + ($position2 - $position1);
-			$arrow.css('margin-left', $arrow_margin_l);
+			$arrow.css('margin-left', $arrow_margin_l + 10);
 		}
 
 	});
-	
+  
+  
 	$(document).click(function(e) {
 		if ($(e.target).parents().filter(".center .authorList3 li .listItem1").length != 1) { 
 			$('.center .authorList3 li').removeClass('active');
@@ -380,7 +382,7 @@ $(function() {
 				.find('.listItem2').removeAttr('style')
 				.find('.arrow').removeAttr('style');
 		}
-		if ($(e.target).parents().filter(".center .study .teachers .item .Img").length != 1) { 
+		if ($(e.target).parents().filter(".center .study .teachers .item").length != 1) { 
 			$('.center .study .teachers .item .Img').removeClass('active');
 			$('.center .study .teachers')
 				.find('.popup').removeAttr('style')

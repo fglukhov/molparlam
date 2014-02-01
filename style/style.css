@@ -1110,3 +1110,173 @@ span.chk.chkChecked {background-position:-13px 0;}
 /*===================*/
 .center .social .twitterBlock{padding-bottom: 20px}
 .center .social .twitterBlock .list .Img img{width: 65px}
+
+/* Программа */
+
+.program-header {
+  background:#fff;
+  padding:33px 20px 9px 20px;
+}
+
+.program-header h2 {
+  text-align:center;
+}
+
+.program-table {
+  margin:0 -1px !important;
+  width:1262px !important;
+  border:none !important;
+}
+
+.program-table td {
+  background:#fff;
+  border:1px solid #eceff1 !important;
+  text-align:left !important;
+  vertical-align:top !important;
+  padding:18px 20px !important;
+  width:25%;
+}
+
+.program-items-wrapper {
+  margin-bottom:18px;
+}
+
+.program-item {
+  min-height: 187px;
+  padding: 0 0 133px 0;
+  position:relative;
+}
+
+.program-item h3 {
+  margin:9px 0 20px 0;
+}
+
+.program-item h3 a,
+.program-item h3 a:visited {
+  text-decoration:none;
+}
+
+.program-item h3 a:hover {
+  background:url(../images/ul-blue.png) 0 20px repeat-x;
+}
+
+.program-item-time {
+  font:14px 'proxima_nova';
+  color:#000;
+}
+
+.program-item-time span {
+  color:#ed242c;
+  font-weight:bold;
+}
+
+.program-lineup {
+  margin:0 0 15px 0;
+}
+
+.program-lineup li {
+  background: url(../images/program-lineup-bullet.png) 0 7px no-repeat;
+  font-size: 14px;
+  line-height: 18px;
+  font-style: italic;
+  padding: 0 0 0 8px;
+  margin: 0;
+}
+
+.program-item .teachers {
+  margin:0 -20px 0 -12px !important;
+  height:130px;
+  position:absolute;
+  bottom:3px;
+}
+
+.program-item .teachers .item {
+  margin:0 7px !important;
+  cursor:pointer;
+}
+
+.program-item .teachers h4 {
+  font-family:'PTSans' !important;
+  font-weight:normal !important;
+  color:#0072bc;
+  line-height:18px;
+  cursor:pointer;
+}
+
+.program-item .teachers h4 span {
+  background:url(../images/ul-blue-dotted.png) 0 16px repeat-x;
+}
+
+.program-table tr td:first-child .teachers .item:first-child .popup {
+  margin-left:-48px !important;
+}
+
+.program-table tr td:first-child .teachers .item:first-child .popup .arrow {
+  margin-left:-110px !important;
+}
+
+.program-items-wrapper {
+  position:relative;
+  z-index:11;
+}
+
+/* Программа END */
+
+/* Выезды */
+
+.fc {
+  zoom:1;
+}
+
+.fc:after {
+  content:".";
+  display:block;
+  height:0;
+  clear:both;
+  visibility:hidden;
+}
+
+.program-header .program-dates {
+  font-family:'proxima_nova';
+  font-size:18px;
+  line-height:20px;
+  text-align:center;
+  padding:20px 0 27px 0;
+}
+
+.departures {
+  background:#fff;
+  padding:0 0 0 0;
+  margin:0 0 18px 0;
+}
+
+.departures-item {
+  width:295px;
+  height:250px;
+  overflow:hidden;
+  float:left;
+  margin:0 10px 20px 10px;
+}
+
+.departures-item .pic {
+  width:295px;
+  height:196px;
+  overflow:hidden;
+  margin:0 0 19px 0;
+}
+
+.departures-item .descr {
+  font-family:'proxima_nova';
+  font-weight:bold;
+  font-size:14px;
+  line-height:18px;
+  text-align:center;
+}
+
+.text-container {
+  background:#fff;
+  padding:33px 20px 20px 20px;
+  margin:0 0 18px 0;
+}
+
+/* Выезды END */
