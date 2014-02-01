@@ -1,0 +1,119 @@
+﻿#aoGoLink{
+  display:none;
+}
+.center .social .block.vk {padding-bottom: 20px}
+
+.center .nopad{
+  padding-top:0;
+}
+.about-pad{
+  padding: 0 10px;
+}
+
+.center .newsList .loader{display:none;}
+
+.main-container{padding: 0 50px  30px 50px}
+
+.projectPhotoLoader, .candidateLoader{display:none;}
+
+.center .socialBtns {padding-top:30px; margin-bottom:30px;}
+.center .media .article .socialBtns, .center .media .anons .socialBtns{margin-bottom:0;}
+
+.center .pages span {color: #006AB2;}
+.center .pages span.active {color: #FFFFFF;}
+
+/*popup form*/
+
+.uniForm .item, .uniForm .item-long {display:inline-block; vertical-align:top; width:260px; margin:0 43px 12px 0;}
+.uniForm .item-long {width:610px; }
+.uniForm .item p {margin:10px 0 0 0; padding:0 10px; font-size:12px;}
+.uniForm .item .textfield {width:305px; padding:0 9px; height:33px; border:1px solid #e5e5e5; font:14px 'PTSans'; color:#000000;}
+.uniForm .item img {margin:1px 0 0 0;}
+.uniForm span {color:#ED242C; font-weight: bold;}
+
+.uniForm .item-long .textfield {width:610px; padding:0 9px; height:33px; border:1px solid #e5e5e5; font:14px 'PTSans'; color:#000000;}
+.uniForm .item-long textarea.textfield{ height:100px;padding:4px 9px; }
+.uniForm .item .hint {width:170px; padding:0 10px; height:35px; font:14px 'PTSans'; line-height:36px; color:#000000; cursor:text;}
+.uniForm .txt1 {display:inline-block; vertical-align:top; padding:9px 10px; background-color:#f5f5f5;}
+
+.center .media .anons .anons_single .block4 {font-size: 14px;}
+.center .media .photoGalery_single .photo{width: 1249px; text-align: center}
+
+.center .newsList .heading.video {background-color: #d69311;}
+
+.center .newsList .heading.photo {background-color: #1368a3;}
+
+.center .newsList .item2 {overflow: hidden}
+.center .newsList .item2 .txt{font-size: 12px;}
+.center .education .block h2 a{text-decoration: none}
+
+.center .about .block2 .item2 .item .pseudoLink.nolink{border-bottom: 0px; cursor: default;}
+.center .about .block2 .item3 .item .pseudoLink.nolink{border-bottom: 0px; cursor: default;}
+
+
+.center .authorList4 {padding:25px 0; background-color:#ffffff; margin-bottom:15px; position:relative; z-index:10;}
+.center .authorList4 h2 {padding:0 20px;}
+.center .authorList4 li {background:none; padding:15px 10px 10px 10px; display:inline-block; vertical-align:top;}
+.center .authorList4 li .listItem1 {width:185px; font-size:14px; text-align:center;}
+.center .authorList4 li .listItem1 .ava {background:none; display:inline-block; vertical-align:top; width:143px; height:143px; border:5px solid transparent; -moz-border-radius:71px; -webkit-border-radius:71px; border-radius:71px; cursor:pointer;}
+.center .authorList4 li .listItem1 .ava img {width:143px; height:143px; -moz-border-radius:73px; -webkit-border-radius:73px; border-radius:73px;}
+.center .authorList4 li .listItem1 a {text-decoration:none; border-bottom:1px dotted #006ab2; line-height:normal;}
+.center .authorList4 li .listItem1 .txt1 {display:inline-block; vertical-align:top; width:143px;}
+.center .authorList4 li .listItem1 .txt2 {font:12px 'PTSans'; line-height:16px; padding-top:10px;}
+
+.center .authorList4 li .listItem2 {background-color:#ffffff; width:250px; padding:15px; border:4px solid #ed242c; position:absolute; top:170px; left:50%; margin-left:-144px; display:none;}
+.center .authorList4 li .listItem2 p {margin-bottom:0;}
+.center .authorList4 li .listItem2 h3 {color:#000000; margin-bottom:5px;}
+.center .authorList4 li .listItem2 .arrow {background:url(../images/arrow2.png) no-repeat; width:23px; height:16px; position:absolute; top:-16px; left:50%; margin-left:-12px;}
+
+.center .authorList4 li.active {position:relative;}
+.center .authorList4 li.active .ava {border-color:#fde9e9;}
+.center .authorList4 li.active .listItem2 {display:block;}
+
+.center .authorList4 li .listItem3 .ava {background:url(../images/no_ava1.png) no-repeat; display:inline-block; vertical-align:top; width:75px; height:75px; border:5px solid transparent; -moz-border-radius:43px; -webkit-border-radius:43px; border-radius:43px;}
+.center .authorList4 li .listItem3 .ava img {width:75px; height:75px; -moz-border-radius:38px; -webkit-border-radius:38px; border-radius:38px;}
+.center .authorList4 li .listItem3 {width:75px; padding:0 8px; font-size:14px; text-align:center;}
+
+.center .authorList4.candidates h2 .txt {display:inline-block; vertical-align:top; padding:5px 20px 0 0;}
+.center .authorList4.candidates select {width:205px; margin-left:5px;}
+.center .authorList4.candidates .listItem1 {width:75px; padding:0 8px;}
+.center .authorList4.candidates li .listItem1 .ava {cursor:default;}
+.center .authorList4.candidates p {font-size:12px; margin-top:10px;}
+.center .authorList4.candidates .more {font:18px 'proxima_nova'; text-align:center; border-top:1px solid #eceff1; padding-top:15px;}
+
+.textfield.w211 input {width:211px;}
+.textfield.w211 .hint {width:211px;}
+
+.textfield.w100 input {width:100%;}
+
+.formImg{margin-top:13px}
+
+.formText {width: 150px;}
+
+#profilePhotoForm{position:absolute; left:-10000px; top:0;}
+
+.formAdd form {display:block;}
+
+.center .cloneForm {padding-bottom: 10px;}
+.center .cloneForm h3 {padding-top:10px; margin:0; color:#000000;}
+.center .cloneForm .addComment {padding-right:90px;}
+.center .cloneForm .user {padding:0;}
+
+.center .cloneForm .formAdd {margin-top:20px; padding-left:100px;}
+.center .cloneForm .formAdd textarea {width:99%; height:105px; border:1px solid #dcdcdc; resize:none;}
+.center .cloneForm .formAdd .btns {padding-top:20px;}
+.center .cloneForm .formAdd .btn1 {background:url(../images/btn_bg1.png) repeat-x; width:105px; height:35px; border:0; cursor:pointer; font:14px 'proxima_nova'; color:#ffffff; font-weight:bold; text-shadow:1px 1px 1px #0d52b3; margin-right:8px;}
+.center .cloneForm .formAdd .btn1:hover {background-position:left -35px;}
+.center .cloneForm .formAdd .btn1:active {background-position:left -70px;}
+.center .cloneForm .formAdd .btns a {text-decoration:none; border-bottom:1px dotted #007dc5; display:inline-block; line-height:12px; margin-left:5px;}
+
+.diList span {width:380px; float:left; margin:20px 20px; display:Block;}
+.diList span.Clear{margin:0;}
+.diList span img {float:left; margin:0 10px 8px 0px;}
+.diList span a{font-size:18px;}
+
+.center .about .block2 .item4 .item .noLink {display: inline-block; vertical-align: top; font-size: 18px; line-height: 18px;}
+
+.popup_ajax header {padding-top:0;}
+
+.center .about .block2 .persons .listItem .ava a{border-bottom:0;}

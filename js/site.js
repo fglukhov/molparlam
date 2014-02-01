@@ -8,16 +8,20 @@ $(function() {
     e.preventDefault();
     window.print();
   });
+  
+  if ($('.center .mainNews .list2 ul').length) {
+    
+    $('.center .mainNews .list2 ul').carouFredSel({
+      auto	: false,
+      circular: false,
+      infinite: false,
+      prev	: function() { return $(this).parent().parent().find(".arrowLeft"); },
+      next	: function() { return $(this).parent().parent().find(".arrowRight"); },
+      items	: 4,
+      scroll	:1
+    });
 	
-	$('.center .mainNews .list2 ul').carouFredSel({
-		auto	: false,
-		circular: false,
-		infinite: false,
-		prev	: function() { return $(this).parent().parent().find(".arrowLeft"); },
-		next	: function() { return $(this).parent().parent().find(".arrowRight"); },
-		items	: 4,
-		scroll	:1
-	});
+  }
 	
 	$mainNewsItems = $('.center .mainNews .list2 li');
 	
@@ -66,26 +70,32 @@ $(function() {
 			timerStart();
 		}
 	);
+  
+  if ($('.center .projects .block1 ul').length) {
+    $('.center .projects .block1 ul').carouFredSel({
+      auto	: false,
+      circular: false,
+      infinite: false,
+      prev	: '.center .projects .block1 .arrowLeft',
+      next	: '.center .projects .block1 .arrowRight',
+      items	:8,
+      scroll	: {
+        items: 1,
+        duration: 100
+      }
+    });
+  }
 	
-	$('.center .projects .block1 ul').carouFredSel({
-		auto	: false,
-		circular: false,
-		infinite: false,
-		prev	: '.center .projects .block1 .arrowLeft',
-		next	: '.center .projects .block1 .arrowRight',
-		items	:8,
-		scroll	: {
-      items: 1,
-      duration: 100
-    }
-	});
+  if ($("select").length) {
+    
+    $('select').CFElement({
+      selectvisibleRows: 5,
+      customScroll: false,
+      showArrows: false
+    });
 	
-	$('select').CFElement({
-		selectvisibleRows: 5,
-		customScroll: false,
-		showArrows: false
-	});
-	
+  }
+  
 	$('.center .media .photoGalery_single .photoList1 li .img_s').click(function(e) {
 		e.preventDefault();
 		
@@ -162,36 +172,44 @@ $(function() {
 
 		
 	});
+  
+  
+	if ($('.center .social .twitterBlock .list ul').length) {
+    $('.center .social .twitterBlock .list ul').carouFredSel({
+      auto	: false,
+      circular: false,
+      infinite: false,
+      prev	: function() { return $(this).parent().parent().find(".arrowLeft"); },
+      next	: function() { return $(this).parent().parent().find(".arrowRight"); },
+      items	:3,
+      scroll	:1
+    });
+  }
+  
+  
+	if ($('.center .newsList1 .block ul').length) {
+    $('.center .newsList1 .block ul').carouFredSel({
+      auto	: false,
+      circular: false,
+      infinite: false,
+      prev	: function() { return $(this).parent().parent().find(".arrowLeft"); },
+      next	: function() { return $(this).parent().parent().find(".arrowRight"); },
+      items	:4,
+      scroll	:1
+    });
+  }
 	
-	$('.center .social .twitterBlock .list ul').carouFredSel({
-		auto	: false,
-		circular: false,
-		infinite: false,
-		prev	: function() { return $(this).parent().parent().find(".arrowLeft"); },
-		next	: function() { return $(this).parent().parent().find(".arrowRight"); },
-		items	:3,
-		scroll	:1
-	});
-	
-	$('.center .newsList1 .block ul').carouFredSel({
-		auto	: false,
-		circular: false,
-		infinite: false,
-		prev	: function() { return $(this).parent().parent().find(".arrowLeft"); },
-		next	: function() { return $(this).parent().parent().find(".arrowRight"); },
-		items	:4,
-		scroll	:1
-	});
-	
-	$('.reviews ul').carouFredSel({
-		auto	: false,
-		circular: false,
-		infinite: false,
-		prev	: function() { return $(this).parent().parent().find(".arrowLeft"); },
-		next	: function() { return $(this).parent().parent().find(".arrowRight"); },
-		items	:3,
-		scroll	:1
-	});
+  if ($('.reviews ul').length) {
+    $('.reviews ul').carouFredSel({
+      auto	: false,
+      circular: false,
+      infinite: false,
+      prev	: function() { return $(this).parent().parent().find(".arrowLeft"); },
+      next	: function() { return $(this).parent().parent().find(".arrowRight"); },
+      items	:3,
+      scroll	:1
+    });
+  }
 	
 	$tabs = $('.center .study .tabsBlock dt .tab');
 	$tabsMaxHeigth = maxHeigth($tabs);
@@ -281,15 +299,17 @@ $(function() {
 		}
 	});
 	
-	$('.newsList.carousel1 ul').carouFredSel({
-		auto	: false,
-		circular: false,
-		infinite: false,
-		prev	: function() { return $(this).parent().parent().find(".arrowLeft"); },
-		next	: function() { return $(this).parent().parent().find(".arrowRight"); },
-		items	:6,
-		scroll	:1
-	});
+  if ($('.newsList.carousel1 ul').length) {
+    $('.newsList.carousel1 ul').carouFredSel({
+      auto	: false,
+      circular: false,
+      infinite: false,
+      prev	: function() { return $(this).parent().parent().find(".arrowLeft"); },
+      next	: function() { return $(this).parent().parent().find(".arrowRight"); },
+      items	:6,
+      scroll	:1
+    });
+  }
 	
 	$('.center .authorList3.candidates li a').click(function(e) {
 		e.preventDefault();
@@ -399,27 +419,32 @@ $(function() {
 		}
 	);
 	
-	$('.fancybox_ajax').fancybox({
-		type:		'ajax',
-		fitToView:	false,
-		title:		false,
-		padding:	0,
-		closeBtn:	false,
-		scrolling: 'visible'
-	});
+  if ($('.fancybox_ajax').length) {
+    $('.fancybox_ajax').fancybox({
+      type:		'ajax',
+      fitToView:	false,
+      title:		false,
+      padding:	0,
+      closeBtn:	false,
+      scrolling: 'visible'
+    });
+  }
 
-	$('.fancybox_iframe').fancybox({
-		type:		'iframe',
-		fitToView:	false,
-		title:		false,
-		padding:	0,
-		closeBtn:	false,
-		scrolling: 'visible',
-		width: 690,
-		afterLoad: function(){
-		    $(this.content).height($(this.content).contents().find('body').outerHeight());
-		}
-	});
+  if ($(".fancybox_iframe").length) {
+    $('.fancybox_iframe').fancybox({
+      type:		'iframe',
+      fitToView:	false,
+      title:		false,
+      padding:	0,
+      closeBtn:	false,
+      scrolling: 'visible',
+      width: 524,
+      afterLoad: function(){
+        $(this.content).height($(this.content).contents().find('body').outerHeight());
+        
+      }
+    });
+  }
 	
   /*pu*/
   $(document).on("click",".project .photoVideoBlock .more a",function(e){
@@ -480,17 +505,19 @@ $(function() {
     reloadCandidates($val, 'd');
 	});
 
-  $('.fancybox_ajax_candidates').fancybox({
-    type:		'ajax',
-    fitToView:	false,
-    title:		false,
-    padding:	0,
-    closeBtn:	false,
-    scrolling: 'visible',
-    beforeLoad : function(){
-      this.href = '/ajax/projects/candidates_detailed.php?type=all';
-    }
-  });
+  if ($('.fancybox_ajax_candidates').length) {
+    $('.fancybox_ajax_candidates').fancybox({
+      type:		'ajax',
+      fitToView:	false,
+      title:		false,
+      padding:	0,
+      closeBtn:	false,
+      scrolling: 'visible',
+      beforeLoad : function(){
+        this.href = '/ajax/projects/candidates_detailed.php?type=all';
+      }
+    });
+  }
 
   
   reloadCandidates = function(id, type){
@@ -524,6 +551,8 @@ $(function() {
       });
     }
   }
+  
+  
 });
 
 function initHint() {
